@@ -1,5 +1,6 @@
 Template.flightEdit.events({
     
+    
   'submit form': function(e) {
     e.preventDefault();
 

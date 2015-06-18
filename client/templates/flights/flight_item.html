@@ -1,0 +1,15 @@
+<template name="flightItem">
+  <a href="{{pathFor 'flightEdit'}}">
+  <div class="flight">
+
+    <div class="flight-content">
+      <h3>{{flt_date}}, from: {{to}} to: {{from}}</h3>
+    </div>
+
+    <!-- the below href uses the spacebars helper (pathFor) to determine
+    the URL and the flightPage is the desired template to use -->
+    <!-- <a href="{{pathFor 'flightPage'}}" -->
+    <!-- class='discuss btn btn-default'>Discuss</a> -->
+  </div>
+</a>
+</template>
