@@ -1,0 +1,98 @@
+<template name="flightSubmit">
+    
+  <form class='name form page'>
+
+  <div class="row">
+    <div class='col-sm-3'>
+      <div class='form-group'>
+        <div class='input-group date'>
+          <label class='control-label' for='flt_date'>Flight Date</label>
+            <input class="form-control datetimepicker4" type="text" value="{{flt_date}}" name='flt_date' id="flt_date" placeholder='Flight date'/>
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class='col-sm-3'>
+      <div class='form-group'>
+        <div class='input-group'>
+          <label class='control-label' for='from'>From</label>
+            <input class="form-control" type="text" value="{{from}}" name='from' id="from" placeholder='From'/>
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class='col-sm-3'>
+      <div class='form-group'>
+        <div class='input-group'>
+          <label class='control-label' for='to'>To</label>
+            <input name='to' class="form-control" type="text" value="{{to}}" id="to" placeholder='To'/>
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class='col-sm-3'>
+      <div class='form-group'>
+        <div class='input-group'>
+          <label class='control-label' for='dep_time'>Departure Time</label>
+            <input name='dep_time' class="form-control datetimepicker" type="text" value="{{dep_time}}" id="dep_time" placeholder='Departure Time'/>
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class='col-sm-3'>
+      <div class='form-group'>
+        <div class='input-group'>
+          <label class='control-label' for='arr_time'>Arrival Time</label>
+            <input name='arr_time' class="form-control datetimepicker" type="text" value="{{arr_time}}" id="arr_time" placeholder='Arrival Time'/>
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class='col-sm-3'>
+      <div class='form-group'>
+        <div class='input-group'>
+          <label class='control-label' for='duration'>Duration</label>
+            <input name='duration' class="form-control" type="text" value="{{duration}}" id="duration" placeholder='Duration'/>
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+              <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class='form-group'>
+      <label class='control-label' for='remarks'>Remarks</label>
+      <div class='controls'>
+        <input name='remarks' id='remarks' type='textarea' value="{{remarks}}" placeholder='Remarks'
+        class='form-control'/>
+      </div>
+    </div>
+
+
+    <input type='submit' value='submit' class='btn btn-primary'/>
+
+
+  </form>
+</template>

@@ -1,0 +1,74 @@
+<template name="flightEdit">
+    
+  <form class='main form page'>
+    <div class='form-group'>
+      <label class='control-label' for='flt_date'>Flight Date</label>
+      <div class='controls'>
+        <input name="flt_date" id="flt_date" type="date" value="{{flt_date}}" placeholder='flight date'
+        class='form-control'/>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='control-label' for='From'>From</label>
+      <div class='controls'>
+        <input name='from' id='from' type='text' value="{{from}}" placeholder='From'
+        class='form-control'/>
+      </div>
+
+      <label class='control-label' for='To'>To</label>
+      <div class='controls'>
+        <input name='to' id='to' type='text' value="{{to}}" placeholder='To'
+        class='form-control'/>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='control-label' for='dep_time'>Departure Time</label>
+      <div class='controls'>
+        <input name='dep_time' id='dep_time' type='time' value="{{dep_time}}" placeholder='Departure Time'
+        class='form-control'/>
+      </div>
+
+      <label class='control-label' for='arr_time'>Arrival Time</label>
+      <div class='controls'>
+        <input name='arr_time' id='arr_time' type='time' value="{{arr_time}}" placeholder='Arrival Time'
+        class='form-control'/>
+      </div>
+    </div>
+
+    <div class='form-group'>
+
+      <label class='control-label' for='duration'>Duration</label>
+      <div class='controls'>
+        <input name='duration' id='duration' type='time' value="{{duration}}" placeholder='Duration'
+        class='form-control'/>
+      </div>
+
+      <label class='control-label' for='instr_time'>Instrument Time</label>
+      <div class='controls'>
+        <input name='instr_time' id='instr_time' type='time' value="{{instr_time}}" placeholder='Instrument Time'
+        class='form-control'/>
+      </div>
+
+      <label class='control-label' for='night_time'>Night Time</label>
+      <div class='controls'>
+        <input name='night_time' id='night_time' type='time' value="{{night_time}}" placeholder='Night Time'
+        class='form-control'/>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label class='control-label' for='remarks'>Remarks</label>
+      <div class='controls'>
+        <input name='remarks' id='remarks' type='textarea' value="{{remarks}}" placeholder='Remarks'
+        class='form-control'/>
+      </div>
+    </div>
+
+
+    <input type='submit' value='submit' class='btn btn-primary'/>
+    <hr/>
+    <a class='btn btn-danger delete' href='#'>Delete flight</a>
+  </form>
+</template>
